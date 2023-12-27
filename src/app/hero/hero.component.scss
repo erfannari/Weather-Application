@@ -1,0 +1,10 @@
+.hero {
+  background-image: url(../../assets/images/purple-sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  p {
+    color: red;
+  }
+}

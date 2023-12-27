@@ -1,0 +1,48 @@
+<div class="info-section">
+  <div class="weather-detail">
+    <div class="date">
+      <p>{{ currentDate }}</p>
+      <h4>{{ currentTime }}</h4>
+    </div>
+    <div class="weather-indices">
+      <div class="temp">
+        <h3>{{ temp }} &deg;</h3>
+        <p>
+          Max: <span> {{ highTemp }} &deg;</span>
+        </p>
+        <br />
+        <p>
+          Min: <span> {{ lowTemp }} &deg;</span>
+        </p>
+      </div>
+      <div class="FHW">
+        <p>
+          Feels like: <span>{{ feelsLike }} &deg;</span>
+        </p>
+        <br />
+        <p>
+          Humidity: <span>{{ humidity }}</span> %
+        </p>
+        <br />
+        <p>
+          Wind Speed: <span>{{ windSpeed }}</span> Km
+        </p>
+        <br />
+
+        <p>
+          Sunrise: <span>{{ sunrise }}</span>
+        </p>
+        <br />
+        <p>
+          Sunset: <span>{{ sunset }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="weather-icon">
+    <img src="{{ conditionIcon }}" alt="{{ condition }}" />
+    <div class="weather-description">
+      <h3>{{ condition }}</h3>
+    </div>
+  </div>
+</div>

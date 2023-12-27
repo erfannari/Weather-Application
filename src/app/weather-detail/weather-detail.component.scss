@@ -1,0 +1,87 @@
+@import url(../../styles.scss);
+.info-section {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.438);
+  .weather-detail {
+    height: 100%;
+    width: 50%;
+    .date {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1rem;
+      margin: 1rem 0.5rem 0.5rem 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+      p {
+        font-family: dosis-ExtraLight;
+        font-size: 1.2rem;
+        color: white;
+        letter-spacing: 1px;
+        margin: 0;
+      }
+      h4 {
+        font-family: dosis-ExtraLight;
+        font-size: 5rem;
+        color: white;
+        letter-spacing: 5px;
+        margin: 0;
+        font-weight: lighter;
+      }
+    }
+    .weather-indices {
+      display: flex;
+      padding: 1rem 0;
+      justify-content: space-evenly;
+      align-items: center;
+      .temp {
+        h3 {
+          font-size: 6rem;
+          font-family: dosis-extralight;
+          color: white;
+          margin: 0;
+          padding: 0;
+          font-weight: lighter;
+        }
+        p {
+          font-size: 1.2rem;
+          font-family: dosis-extralight;
+          color: white;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .FHW {
+        p {
+          font-size: 1.2rem;
+          font-family: dosis-extralight;
+          color: white;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .weather-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    img {
+      width: 25%;
+    }
+    .weather-description {
+      h3 {
+        font-size: 2.3rem;
+        font-family: dosis-extralight;
+        color: white;
+        font-weight: lighter;
+        padding: 0;
+      }
+    }
+  }
+}

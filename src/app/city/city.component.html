@@ -1,0 +1,19 @@
+<div class="city">
+  <div class="city-name">
+    <h3>{{ cityName }} / {{ country }}</h3>
+  </div>
+  <div class="city-search">
+    <input
+      class="city-input"
+      type="search"
+      name="city-name"
+      id="userInput"
+      value="tehran"
+      placeholder="Enter Your City..."
+      #cityInput
+    />
+    <button class="search-but" id="autoClick" (click)="citySearch(cityInput.value)">
+      search
+    </button>
+  </div>
+</div>

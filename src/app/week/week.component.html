@@ -1,0 +1,19 @@
+<div class="week">
+  <div class="day-detail" *ngFor="let detail of dayDetail">
+    <div class="day-name">
+      <h3>{{ detail.dayName | TransformDate}}</h3>
+    </div>
+    <div class="day-HL">
+      <img src="{{ detail.conditionIcon }}" alt="" />
+      <div class="HL">
+        <h3>{{ detail.conditionText | slice:0:8 }}</h3>
+        <p>
+          Max: <span> {{ detail.maxTemp }} &deg;</span>
+        </p>
+        <p>
+          Min: <span> {{ detail.minTemp }} &deg;</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

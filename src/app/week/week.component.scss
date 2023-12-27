@@ -1,0 +1,53 @@
+.week {
+  display: flex;
+  :last-child {
+    border: 0 !important;
+  }
+  .day-detail {
+    padding: 0 2rem;
+    margin: 1rem 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.438);
+    width: 100%;
+    .day-name {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      h3 {
+        font-family: dosis-semibold;  
+        font-weight: lighter;      
+        font-size: 1.6rem;
+        color: white;
+        margin: 0.5rem 0;
+      }
+    }
+    .day-HL {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%
+      }
+      .HL {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          margin: 0.5rem 0;
+          font-family: dosis-extralight;
+          font-weight: lighter;
+          font-size: 1.8rem;
+          color: white;
+        }
+        p {
+          margin: 0.5rem 0;
+          font-family: dosis-extralight;
+          font-weight: lighter;
+          font-size: 1.1rem;
+          color: white;
+        }
+      }
+    }
+  }
+}
