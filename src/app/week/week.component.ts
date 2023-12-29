@@ -86,15 +86,9 @@ export class WeekComponent implements OnInit, OnDestroy {
                 (value: any, index: number) => {
                   this.dayDetail[index].dayName = value.date;
                   this.dayDetail[index].maxTemp = value.day.maxtemp_c;
-                  this.dayDetail[index].maxTemp = value.day.maxtemp_c;
                   this.dayDetail[index].minTemp = value.day.mintemp_c;
-                  if ((value.day.condition.icon = 'Sunny')) {
-                    this.dayDetail[index].conditionIcon =
-                      '../../../assets/icons/sun.png';
-                  } else {
-                    this.dayDetail[index].conditionIcon =
-                      value.day.condition.icon;
-                  }
+                  this.dayDetail[index].conditionIcon =
+                    value.day.condition.icon;
                   this.dayDetail[index].conditionText =
                     value.day.condition.text;
                 }

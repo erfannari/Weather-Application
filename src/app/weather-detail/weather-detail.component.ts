@@ -13,8 +13,8 @@ import { Subject, Subscription } from 'rxjs';
 })
 export class WeatherDetailComponent implements OnInit, OnDestroy {
   temp: string = '0';
-  highTemp: string = '0';
-  lowTemp: string = '0';
+  maxTemp: string = '0';
+  minTemp: string = '0';
   feelsLike: string = '0';
   humidity: string = '0';
   windSpeed: string = '0';
@@ -50,21 +50,18 @@ export class WeatherDetailComponent implements OnInit, OnDestroy {
               this.humidity = currentWeatherResponse.current.humidity;
               this.windSpeed = currentWeatherResponse.current.wind_kph;
               this.condition = currentWeatherResponse.current.condition.text;
-              if ((currentWeatherResponse.current.condition.text = 'Sunny')) {
-                this.conditionIcon = '../../../assets/icons/sun.png';
-              } else {
-                this.conditionIcon =
-                  currentWeatherResponse.current.condition.icon;
-              }
+              this.conditionIcon = currentWeatherResponse.current.condition.icon;
               let localtime = currentWeatherResponse.location.localtime;
               this.currentTime = localtime.slice(11);
             });
           this.forcastService
             .Forecast(this.cityName)
             .subscribe((forecastResponse) => {
-              this.highTemp =
+              // Getting MaxTemp info
+              this.maxTemp =
                 forecastResponse.forecast.forecastday[0].day.maxtemp_c;
-              this.lowTemp =
+              // Getting MinTemp info
+                this.minTemp =
                 forecastResponse.forecast.forecastday[0].day.mintemp_c;
               // Getting sunrise info
               this.sunrise =

@@ -1,13 +1,9 @@
 @import url(../../styles.scss);
 .info-section {
   display: flex;
-  padding-bottom: 1rem;
-  justify-content: space-between;
   flex-direction: row-reverse;
-  backdrop-filter: blur(3px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.438);
   .weather-detail {
-    height: 100%;
     width: 50%;
     .date {
       display: flex;
@@ -72,11 +68,11 @@
     align-items: center;
     margin: auto;
     img {
-      width: 25%;
+      width: 10rem;
     }
     .weather-description {
       h3 {
-        font-size: 2.3rem;
+        font-size: 4.5rem;
         font-family: dosis-extralight;
         color: white;
         font-weight: lighter;
